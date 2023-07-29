@@ -1,20 +1,27 @@
-title ydl-cli - dependencies installer
+cd dep_files
+
 echo [ydl-cli] Installing and/or updating dependencies...
 echo [ydl-cli] Please wait the download finishes.
 echo.
-Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
+
 echo [ydl-cli] Please confirm the installation of "winget" for the installation of a subdependency (ffmpeg).
 echo [ydl-cli] If you already have "winget" installed, just close the update window.
 echo.
+8wekyb3d8bbwe.msixbundle
+
 echo [ydl-cli] Anyway, just press Enter to continue. :)
 pause >nul
 cls
+
 echo [ydl-cli] Installing "ffmpeg"
 echo.
 winget install ffmpeg
 cls
+
 echo [ydl-cli] Installing Python code dependencies...
 echo.
-pip install -r DEPENDENCIES
+pip install -r dependencies
 cls
-RUN_SCRIPT
+
+cd ..
+st_script

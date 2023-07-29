@@ -1,5 +1,6 @@
-title ydl-cli
 echo [ydl-cli] Running the script... :)
 cls
-python YDL-CLI.py
+cd ..
+cd scripts
+python ydl-cli.py
 exit

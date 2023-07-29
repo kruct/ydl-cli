@@ -1,4 +1,4 @@
 @echo off
 title ydl-cli
-cd scripts
-INST_DEP
+cd modules
+dep_installer
