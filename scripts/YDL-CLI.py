@@ -1,12 +1,6 @@
 import os
 import subprocess
 import youtube_dl
-import pyautogui
-
-def simulate_f11_keypress():
-    pyautogui.press('f11')
-
-simulate_f11_keypress()
 
 def download_youtube_video(video_url):
     ydl_opts = {
