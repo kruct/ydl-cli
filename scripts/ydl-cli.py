@@ -24,6 +24,10 @@ def combine_audio_video(video_filename):
     print(f"File saved as: {output_filename}")
 
 def main():
+    print("[ydl-cli] Made by Lucas Gabriel (lucmsilva) - Only runs on Windows")
+    print("[ydl-cli] See new updates at:")
+    print("[ydl-cli] https://github.com/ydl-team/ydl-cli/")
+    print()
     video_url = input("[ydl-cli] Enter the YouTube video URL or ID you want to download: ")
     video_filename = download_youtube_video(video_url)
     combine_audio_video(video_filename)
