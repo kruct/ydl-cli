@@ -1,5 +1,5 @@
 # ydl-cli
-An modular script to download YouTube videos (and YT Music songs) via CLI
+An modular script to download YouTube videos (and YT Music songs) via CLI for Windows
 
 ## Use and installation
 [Download the entire repo here](https://github.com/lucmsilva651/ydl-cli/archive/refs/heads/main.zip) (don't worry, it's very lightweight)
