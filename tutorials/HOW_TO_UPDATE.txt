@@ -1,0 +1,17 @@
+[ydl-cli tutorial]
+
+=======================================================================
+
+HOW TO UPDATE "winget" FROM GITHUB
+
+1. RUN THE UPD_WINGET SHORTCUT IN THE /optional FOLDER
+
+2. IN THE LATEST RELEASE IN GITHUB, JUST DOWNLOAD THE FOLLOWING FILE:
+    - Microsoft.DesktopAppInstaller_8wekyb3d8bbwe.msixbundle
+
+3. PASTE THIS FILE YOU DOWNLOADED IN THE /scripts FOLDER AND RUN
+   THE RUN.cmd FILE IN THE MAIN FOLDER.
+
+=======================================================================
+
+TUTORIAL MADE BY THE ydl-cli TEAM. USE WITH THE MIT LICENSE.
