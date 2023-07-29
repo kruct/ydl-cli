@@ -12,10 +12,10 @@ In the command prompt, just put the video ID or the video URL and press Enter to
 
 # Screenshots
  - ## Downloading with video ID
-![Download via video ID screenshot](https://raw.githubusercontent.com/lucmsilva651/ydl-cli/main/screenshots/id_down.png "Video ID")
+![Download via video ID screenshot](https://raw.githubusercontent.com/lucmsilva651/ydl-cli/main/misc/screenshots/id_down.png "Video ID")
 
  - ## Downloading with video URL
-![Download via video URL screenshot](https://raw.githubusercontent.com/lucmsilva651/ydl-cli/main/screenshots/url_down.png "Video URL")
+![Download via video URL screenshot](https://raw.githubusercontent.com/lucmsilva651/ydl-cli/main/misc/screenshots/url_down.png "Video URL")
 
 # External sources used
 Using this sources for now:
