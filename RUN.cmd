@@ -25,4 +25,4 @@ if '%errorlevel%' NEQ '0' (
 
 title ydl-cli
 cd modules
-dep_installer
+dep_inst_caller
