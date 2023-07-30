@@ -26,7 +26,7 @@ async def download_youtube_video(video_url):
         'outtmpl': '%(title)s.%(ext)s',
     }
     with YoutubeDL(ydl_opts) as ydl:
-        info_dict = await extract_info(video_url, download=True)
+        info_dict = await extract_info(ydl, video_url, download=True)
         video_filename = ydl.prepare_filename(info_dict)
 
     return video_filename
