@@ -8,6 +8,7 @@ from typing import Callable
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 
+REPO_ = "https://github.com/ydl-team/ydl-cli/"
 BRANCH_ = "main"
 
 def updater():
