@@ -4,4 +4,4 @@ echo.
 cd ..
 cd scripts
 
-Powershell.exe -executionpolicy remotesigned -File winget_installer.ps1
+Powershell.exe -executionpolicy remotesigned -File chocolatey_installer.ps1

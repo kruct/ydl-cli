@@ -1,8 +1,8 @@
 @echo off
 cls
-echo [ydl-cli] Installing "ffmpeg" via "winget"
+echo [ydl-cli] Installing "ffmpeg" via "Chocolatey"
 echo.
-winget install ffmpeg
+choco install ffmpeg-full
 cls
 
 pythondep_installer
