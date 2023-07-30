@@ -1,6 +1,6 @@
 import os
 import subprocess
-import youtube_dl
+import yt_dlp
 
 def download_youtube_video(video_url):
     ydl_opts = {
@@ -8,7 +8,7 @@ def download_youtube_video(video_url):
         'outtmpl': '%(title)s.%(ext)s',
     }
 
-    with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         info_dict = ydl.extract_info(video_url, download=True)
         video_filename = ydl.prepare_filename(info_dict)
 
