@@ -20,5 +20,5 @@ In the command prompt, just put the video ID or the video URL and press Enter to
 # External sources used
 Using this sources for now:
 ```
-winget-cli, ffmpeg, youtube-dl
+chocolatey, ffmpeg, youtube-dl
 ``` 
