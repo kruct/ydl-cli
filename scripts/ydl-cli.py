@@ -6,6 +6,26 @@ from yt_dlp import YoutubeDL
 from functools import wraps, partial
 from typing import Callable
 
+def updater():
+    print("Checking for Updates...")
+    print()
+    try:
+        process = subprocess.Popen(["git", "pull"], stdout=subprocess.PIPE)
+        output = process.communicate()[0]
+        string = str(output)
+        if string == "b'Already up to date.\n'":
+            print("[ydl-cli] It's up to date! Proceeding...")
+            print()
+            pass
+        elif string == "b''":
+            print("[ydl-cli] Do the Git setup first.")
+            print()
+            pass
+        else:
+            print("[ydl-cli] Update successful!")
+            print()
+            pass
+            
 def aiowrap(func: Callable) -> Callable:
     @wraps(func)
     async def run(*args, loop=None, executor=None, **kwargs):
@@ -40,4 +60,5 @@ async def main():
     video_filename = await download_youtube_video(video_url)
 
 if __name__ == "__main__":
+    updater()
     asyncio.run(main())
