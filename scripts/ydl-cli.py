@@ -1,21 +1,14 @@
 import os
 import subprocess
-
-from functools import partial, wraps
-from yt_dlp import YouTubeDL
-
-@aiowrap
-def extract_info(instance: YoutubeDL, url: str, download=True):
-    return instance.extract_info(url, download)
+import yt_dlp
 
 def download_youtube_video(video_url):
     ydl_opts = {
         'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
         'outtmpl': '%(title)s.%(ext)s',
     }
-
-    with YoutubeDL(ydl_opts) as ydl:
-        info_dict = await extract_info(video_url, download=True)
+    with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+        info_dict = ydl.extract_info(video_url, download=True)
         video_filename = ydl.prepare_filename(info_dict)
 
     return video_filename
