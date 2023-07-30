@@ -8,6 +8,8 @@ from typing import Callable
 from git import Repo
 from git.exc import GitCommandError, InvalidGitRepositoryError
 
+BRANCH_ = "main"
+
 def updater():
     print("Checking for updates...")
     print()
