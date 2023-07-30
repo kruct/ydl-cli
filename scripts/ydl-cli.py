@@ -1,8 +1,20 @@
 import os
+import asyncio
 import subprocess
 
 from functools import partial, wraps
 from yt_dlp import YouTubeDL
+from typing import Callable
+
+def aiowrap(func: Callable) -> Callable:
+    @wraps(func)
+    async def run(*args, loop=None, executor=None, **kwargs):
+        if loop is None:
+            loop = asyncio.get_event_loop()
+        pfunc = partial(func, *args, **kwargs)
+        return await loop.run_in_executor(executor, pfunc)
+
+    return run
 
 @aiowrap
 def extract_info(instance: YoutubeDL, url: str, download=True):
