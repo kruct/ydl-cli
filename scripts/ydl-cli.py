@@ -25,6 +25,9 @@ def updater():
             print("[ydl-cli] Update successful!")
             print()
             pass
+    except Exception:
+        print("An Error Occurred!!!")
+        print()
             
 def aiowrap(func: Callable) -> Callable:
     @wraps(func)
