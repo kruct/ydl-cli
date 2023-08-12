@@ -35,7 +35,7 @@ async def main():
     print("[ydl-cli] Made by Lucas Gabriel (lucmsilva)")
     print("[ydl-cli] See new updates at: https://github.com/ydl-team/ydl-cli/")
     print()
-    video_url = input("[ydl-cli] Enter the YouTube video URL or ID you want to download: ")
+    video_url = input("[ydl-cli] Enter the video URL or ID you want to download: ")
     print()
     video_filename = await download_youtube_video(video_url)
 

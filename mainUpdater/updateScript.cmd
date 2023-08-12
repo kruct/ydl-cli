@@ -1,4 +1,5 @@
 @echo off
+cd updaterCore
 echo [ydl-cli updater] Downloading: Latest ydl-cli release from "github.com"
-download https://github.com/ydl-team/ydl-cli/archive/refs/heads/main.zip
+updaterCore https://github.com/ydl-team/ydl-cli/archive/refs/heads/main.zip
 exit

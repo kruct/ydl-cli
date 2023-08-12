@@ -1,1 +1,0 @@
-chocolatey_installer

@@ -20,3 +20,6 @@ if %errorlevel% equ 0 (
 ) else (
     echo [ydl-cli updater] Download failed (we don't know why)
 )
+
+rename "main.zip" "latestUpdate.zip"
+Powershell.exe -executionpolicy remotesigned -File moveUpdate.ps1

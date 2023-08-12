@@ -6,4 +6,4 @@ choco feature enable -n allowGlobalConfirmation
 choco install ffmpeg-full
 cls
 
-pythondep_installer
+startMain
