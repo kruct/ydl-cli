@@ -17,7 +17,7 @@ In the script window, just put the link of the video you want to download (see b
 - SoundCloud (tested)
 - Spotify (only works if the content is not DRM-protected)
 - Deezer (only the 30sec music preview)
-- PornHub (tested)
+- PornHub (tested, just ignore that, but it works ok)
 > Making this compatibility list is quite complicated, but if I discover one more compatible site I will update this list as soon as possible.
 
 ## External sources
