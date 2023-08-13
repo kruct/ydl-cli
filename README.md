@@ -1,28 +1,18 @@
 # ydl-cli
-An modular script to download YouTube videos (and YT Music songs) via CLI for Windows
+A modular script to download videos from multiple sites via CLI
 
-## Pre-requisites
- - Most recent version of Python
- - A windows environment
+## Recommended pre-requisites
+ - The most recent version of Python
+ - A Windows 10 environment
  
-## Use and installation
-[Download the entire repo here](https://github.com/lucmsilva651/ydl-cli/archive/refs/heads/main.zip) (don't worry, it's very lightweight)
-
-## Running the script
-Just run the "run.cmd" file. It's simple!
+## Installation
+On this repository page, click the "Code" button and then click "Download ZIP". When the download finishes, extract the downloaded ZIP to any folder and run the "RUN.cmd" file inside that folder. Is it easy?
 
 ## Downloading a video by ID or URL
-In the command prompt, just put the video ID or the video URL and press Enter to confirm the download.
+In the script window, just put the link of the video you want to download (see below the supported platforms), and press Enter to start the download.
 
-# Screenshots
- - ## Downloading with video ID
-![Download via video ID screenshot](https://raw.githubusercontent.com/lucmsilva651/ydl-cli/main/misc/screenshots/id_down.png "Video ID")
-
- - ## Downloading with video URL
-![Download via video URL screenshot](https://raw.githubusercontent.com/lucmsilva651/ydl-cli/main/misc/screenshots/url_down.png "Video URL")
-
-# External sources used
-Using this sources for now:
+## External sources
+The script uses these sources and libraries:
 ```
-chocolatey, ffmpeg, youtube-dl
-``` 
+chocolatey, yt_dlp, ffmpeg
+```
