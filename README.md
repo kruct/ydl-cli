@@ -11,7 +11,7 @@ git clone https://github.com/lucmsilva651/ydl-cli
 Remember to install all the dependencies below to ensure the script will work.
 ```
 pip install yt_dlp
-pip install ffmpeg
+winget install ffmpeg
 ```
 
 ## Downloading a video by ID or URL

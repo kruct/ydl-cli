@@ -1,44 +1,26 @@
-import os
-import subprocess
-import asyncio
-
 from yt_dlp import YoutubeDL
-from functools import wraps, partial
-from typing import Callable
 
-def aiowrap(func: Callable) -> Callable:
-    @wraps(func)
-    async def run(*args, loop=None, executor=None, **kwargs):
-        if loop is None:
-            loop = asyncio.get_event_loop()
-        pfunc = partial(func, *args, **kwargs)
-        return await loop.run_in_executor(executor, pfunc)
-
-    return run
-
-@aiowrap
 def extract_info(instance: YoutubeDL, url: str, download=True):
     return instance.extract_info(url, download)
 
-async def download_youtube_video(video_url):
+def download_youtube_video(video_url):
     ydl_opts = {
         'format': 'bestvideo[ext=mp4]+bestaudio[ext=m4a]/best[ext=mp4]/best',
         'outtmpl': '%(title)s.%(ext)s',
     }
     with YoutubeDL(ydl_opts) as ydl:
-        info_dict = await extract_info(ydl, video_url, download=True)
+        info_dict = extract_info(ydl, video_url, download=True)
         video_filename = ydl.prepare_filename(info_dict)
-
+    
     return video_filename
 
-async def main():
+def main():
     print("[ydl-cli] Made by Lucas Gabriel (lucmsilva)")
     print("[ydl-cli] See new updates at: https://github.com/lucmsilva651/ydl-cli/")
     print()
-    video_url = input("[ydl-cli] Enter the video URL or ID you want to download: ")
     print("[ydl-cli] Supported platforms on README.md file")
+    video_url = input("[ydl-cli] Enter the video URL or ID you want to download: ")
     print()
-    video_filename = await download_youtube_video(video_url)
+    video_filename = download_youtube_video(video_url)
 
-if __name__ == "__main__":
-    asyncio.run(main())
+main()
