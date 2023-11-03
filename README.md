@@ -27,4 +27,6 @@ In the script window, just put the link of the video you want to download (see b
 > Making this compatibility list is quite complicated, but if I discover one more compatible site I will update this list as soon as possible.
 
 ## Info: About & License
-2023 - Lucas Gabriel (lucmsilva). See the LICENSE.md file in this repository for more information.
+2023 - Lucas Gabriel (lucmsilva). 
+
+See the LICENSE.md file in this repository for more information.
